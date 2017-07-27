@@ -3,10 +3,11 @@
 
 
 ## Øvinger
-- [Øving 1: Tjenerprogrammering](Øving%201)
-- [Øving 2: JavaScript og CSS](Øving%202)
-  - [Oppgave 1](Øving%203/oppgave1)
-  - [Oppgave 2](Øving%203/oppgave2)
+- [Øving 1: Tjenerprogrammering](Øving%2001)
+- [Øving 2: JavaScript og CSS](Øving%2002)
+  - [Oppgave 1](Øving%2002/Oppgave%201)
+  - [Oppgave 2](Øving%2002/Oppgave%202)
+  - [Oppgave 3](Øving%2002/Oppgave%203)
 - [Øving 3: ](Øving%203)
 
 ## Se andre emner
