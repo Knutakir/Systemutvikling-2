@@ -1,5 +1,5 @@
 # Systemutvikling-2
-Øvinger fra Systemutvikling, høsten 2016 på NTNU
+Øvinger fra Systemutvikling 2 med web-applikasjoner, høsten 2016 på NTNU
 
 
 ## Øvinger
