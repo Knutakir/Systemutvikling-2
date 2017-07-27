@@ -1,0 +1,22 @@
+#tekst {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 400%;
+  margin-left: 25%;
+  margin-top: 20%;
+}
+
+.overTre {
+  color: black;
+}
+
+.mellomEnOgTre {
+  color: green;
+}
+
+.underEnMnd {
+  color: red;
+}
+
+body {
+  background: linear-gradient(to right, #f85032, #e73827);
+}

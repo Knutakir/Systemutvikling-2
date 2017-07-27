@@ -1,0 +1,14 @@
+.bilde {
+  height: 300px;
+  width: 250px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-image: url("http://www.best-i-test.info/wp-content/uploads/2011/08/kjekser.jpg");
+}
+
+.bilde:hover{
+  width: 400px;
+  background-image: url("https://lisevonkrogh.files.wordpress.com/2012/08/knekkebrod1.jpg");
+}

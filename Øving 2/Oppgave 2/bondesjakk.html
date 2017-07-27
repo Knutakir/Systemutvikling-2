@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bondesjakk</title>
+		<link rel="stylesheet" href="Style.css" media="screen" title="no title">
+		<script type="text/javascript" src="Script.js"></script>
+	</head>
+
+	<body>
+		<h1>Spill bondesjakk!</h1>
+		<p>
+		Her kan to personer spille bondesjakk. Når
+		førstemann (rødt) velger rute, klikker han en gang, og
+		når andremann (grønt) velger rute, dobbeltklikker han.
+		</p>
+
+		<table id="bondesjakkbrett">
+			<tbody>
+				<tr>
+		      <td class="tabellrute" onclick="enkeltTrykk(this)" ondblclick="dobbeltTrykk(this)"></td>
+		      <td class="tabellrute" onclick="enkeltTrykk(this)" ondblclick="dobbeltTrykk(this)"></td>
+		      <td class="tabellrute" onclick="enkeltTrykk(this)" ondblclick="dobbeltTrykk(this)"></td>
+				</tr>
+				<tr>
+	        <td class="tabellrute" onclick="enkeltTrykk(this)" ondblclick="dobbeltTrykk(this)"></td>
+	        <td class="tabellrute" onclick="enkeltTrykk(this)" ondblclick="dobbeltTrykk(this)"></td>
+	        <td class="tabellrute" onclick="enkeltTrykk(this)" ondblclick="dobbeltTrykk(this)"></td>
+				</tr>
+				<tr>
+			       <td class="tabellrute" onclick="enkeltTrykk(this)" ondblclick="dobbeltTrykk(this)"></td>
+			       <td class="tabellrute" onclick="enkeltTrykk(this)" ondblclick="dobbeltTrykk(this)"></td>
+			       <td class="tabellrute" onclick="enkeltTrykk(this)" ondblclick="dobbeltTrykk(this)"></td>
+			  </tr>
+			</tbody>
+		</table>
+		<p>Du må laste inn siden på nytt for å starte et nytt spill.</p>
+	</body>
+</html>

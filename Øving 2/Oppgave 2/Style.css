@@ -1,0 +1,17 @@
+#bondesjakkbrett {
+  width:300px;
+  height:300px;
+  border: 3px solid black;
+}
+
+.tabellrute {
+  background-color: #ccc;
+}
+
+.spillerEn {
+  background-color: red;
+}
+
+.spillerTo {
+  background-color: green;
+}
