@@ -1,0 +1,15 @@
+.boksTest {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+}
+
+button {
+  position: fixed;
+  left: 45%;
+  top: 45%;
+  display: none;
+}
