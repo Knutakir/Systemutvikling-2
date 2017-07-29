@@ -11,7 +11,7 @@
 - [Øving 3: REST](Øving%2003)
 - [Øving 4: jQuery, AJAX](Øving%2004)
 - [Øving 5-9: Case backend, frontend og lxd interaksjonsdesign](https://github.com/Systemutvikling2INK/Elsykkelutleie)
-- [Øving 10: Bygging](Øving%2010)
+- [Øving 10: Bygging](https://github.com/Knutakir/Sentiment)
 - [Øving 11: Testing](Øving%2011)
 - [Øving 12: TDD-workshop](Øving%2012)
 - [Øving 13: Sikkerhetsworkshop](Øving%2013)
