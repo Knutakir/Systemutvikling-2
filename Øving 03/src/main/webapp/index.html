@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+    <title>Øving 3 - Kunder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        $(document).ready(function(){
+            // Bind opp tabellen mot rest-ressursen '/kunder'
+            $('#myTable').DataTable( {
+                ajax: {
+                    url: '/rest/kunder/',
+                    dataSrc: ''
+                },
+                columns: [
+                    { data: 'id' },
+                    { data: 'navn' }
+                ]
+            });
+
+            // Slett rest-ressursen '/kunder/kundeId'
+            $("#delete").click(function () {
+                $.ajax({
+                    url: 'rest/kunder/' + $("#deleteId").val(),
+                    type: 'DELETE',
+                    success: function(result) {
+                        $('#myTable').DataTable().ajax.reload();
+                    },
+                    error: function(result) {
+                        alert("Det er ingen bruker å slette med denne id'en");
+                    }
+                });
+            });
+
+            // Lag ny rest-ressursen under '/kunder/'
+            $("#create").click(function () {
+                $.ajax({
+                    url: 'rest/kunder/',
+                    type: 'POST',
+                    data: JSON.stringify({
+                        id: $("#newId").val(),
+                        navn: $("#newName").val(),
+                    }),
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: 'json',
+                    success: function(result) {
+                        $('#myTable').DataTable().ajax.reload();
+                    },
+                    error: function(result) {
+                        alert("Det eksisterer allerede en bruker med denne id'en");
+                    }
+                });
+            });
+
+            $("#change").click(function () {
+                $.ajax({
+                    url: 'rest/kunder/',
+                    type: 'PUT',
+                    data: JSON.stringify({
+                        id: $("#changeId").val(),
+                        navn: $("#changeName").val(),
+                    }),
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: 'json',
+                    success: function(result) {
+                        $("#myTable").DataTable().ajax.reload();
+                    },
+                    error: function(result) {
+                        alert("Ingen kunder med denne id'en");
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>Kunder</h1>
+<table id="myTable" class="display compact">
+    <thead>
+    <tr><th>ID</th><th>Navn</th></tr>
+    </thead>
+</table>
+
+<input id="deleteId" placeholder="kundens id" type="text">
+<button id="delete">Delete</button>
+<br>
+
+<input id="newId" value="newId" type="text">
+<input id="newName" value="newName" type="text">
+<button id="create">Create New</button><br>
+
+<input id="changeId" value="changeId" type="text">
+<input id="changeName" value="changeName" type="text">
+<button id="change">Change customer details</button>
+
+</body></html>
